@@ -1,0 +1,15 @@
+# Maintainer: Jim Madge <jmmadge@gmail.com>
+pkgname=my-paccache-pacman-hook
+pkgver=1
+pkgrel=1
+pkgdesc='A pacman hook to remove old packages from the cache'
+arch=('any')
+license=('MIT')
+depends=('systemd')
+source=('paccache.hook')
+md5sums=('66d67b8a33b4e38def6a705dafe5f92d')
+
+package() {
+        install -m0755 -d "$pkgdir"/etc/pacman.d/hooks
+        install -m0644 "$srcdir"/paccache.hook "$pkgdir"/etc/pacman.d/hooks/paccache.hook
+}
