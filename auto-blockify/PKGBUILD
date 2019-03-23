@@ -1,0 +1,14 @@
+# Maintainer: Jim Madge <jmmadge@gmail.com>
+pkgname=auto-blockify
+pkgver=1
+pkgrel=1
+pkgdesc='Automatically start blockify when launching spotify'
+arch=('any')
+license=('MIT')
+depends=('spotify' 'blockify')
+source=('spotify')
+sha256sums=('769f45eb08ea7523825392fb03ff7ce487fc516ff3954506879babfdc1b08d56')
+
+package() {
+        install -D -m0755 "$srcdir"/spotify "$pkgdir"/usr/local/bin/spotify
+}
