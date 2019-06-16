@@ -5,7 +5,7 @@ pkgrel=1
 pkgdesc='A pacman hook to remove uninstalled packages from the cache'
 arch=('any')
 license=('MIT')
-depends=('systemd')
+depends=('pacman-contrib')
 source=('paccache-uninstall.hook')
 md5sums=('38ce34fe74b43f04d0084019e9921914')
 

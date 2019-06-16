@@ -5,7 +5,7 @@ pkgrel=1
 pkgdesc='A pacman hook to remove old packages from the cache'
 arch=('any')
 license=('MIT')
-depends=('systemd')
+depends=('pacman-contrib')
 source=('paccache.hook')
 md5sums=('66d67b8a33b4e38def6a705dafe5f92d')
 
