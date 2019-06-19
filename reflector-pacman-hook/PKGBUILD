@@ -5,7 +5,8 @@ pkgrel=1
 pkgdesc='A pacman hook to update the mirrorlist when pacman-mirrorlist is upgraded'
 arch=('any')
 license=('MIT')
-depends=('pacman-contrib')
+depends=('pacman-contrib'
+         'reflector')
 source=('reflector.hook')
 md5sums=('1c7092b16b957a0be9cbef7de80453e4')
 
