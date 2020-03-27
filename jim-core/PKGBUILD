@@ -1,0 +1,17 @@
+# Maintainer: Jim Madge <jmmadge@gmail.com>
+
+pkgname=jim-core
+pkgver=1
+pkgrel=1
+arch=(any)
+pkgdesc='My core packages'
+depends=(vim
+         zsh
+         git
+         fzf
+         tmux
+         firefox
+         julia
+         gcc
+         flake8
+         )
