@@ -6,6 +6,7 @@ pkgrel=1
 arch=(any)
 pkgdesc='Metapackage for my plasma and kde prefernces'
 depends=(plasma-meta
+         latte-dock
          konsole
          dolphin
          okular
