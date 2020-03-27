@@ -1,0 +1,14 @@
+# Maintainer: Jim Madge <jmmadge@gmail.com>
+
+pkgname=kde-plasma-meta
+pkgver=1
+pkgrel=1
+arch=(any)
+pkgdesc='Metapackage for my plasma and kde prefernces'
+depends=(plasma-meta
+         konsole
+         dolphin
+         okular
+         ark
+         gwenview
+         spectacle)
