@@ -8,7 +8,7 @@ license=('MIT')
 depends=('pacman-contrib'
          'reflector')
 source=('reflector.hook')
-md5sums=('1c7092b16b957a0be9cbef7de80453e4')
+md5sums=('71ae4923d5b9b36e9d79e8f62e619f09')
 
 package() {
         install -m0755 -d "$pkgdir"/etc/pacman.d/hooks
