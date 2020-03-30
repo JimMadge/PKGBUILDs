@@ -14,4 +14,4 @@ depends=(vim
          julia
          gcc
          flake8
-         )
+         pacman-contrib)
