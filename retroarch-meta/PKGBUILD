@@ -1,0 +1,13 @@
+# Maintainer: Jim Madge <jmmadge@gmail.com>
+
+pkgname=retroarch-meta
+pkgver=1
+pkgrel=1
+arch=(any)
+pkgdesc='My meta package for retroarch and libretro cores'
+depends=(retroarch
+         retroarch-assets-xmb
+         retroarch-assets-ozone
+         libretro-beetle-psx-hw
+         libretro-bsnes
+         )
