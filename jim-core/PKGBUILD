@@ -10,7 +10,12 @@ depends=(vim
          git
          fzf
          tmux
+         pass
+         cmus
+         mpv
+         youtube-dl
          firefox
+         nextcloud-client
          julia
          gcc
          flake8
