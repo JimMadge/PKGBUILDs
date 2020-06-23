@@ -2,7 +2,7 @@
 
 pkgname=retroarch-meta
 pkgver=1
-pkgrel=1
+pkgrel=2
 arch=(any)
 pkgdesc='My meta package for retroarch and libretro cores'
 depends=(retroarch
@@ -10,4 +10,6 @@ depends=(retroarch
          retroarch-assets-ozone
          libretro-beetle-psx-hw
          libretro-bsnes
+         libretro-mupen64plus-next
+         libretro-dolphin
          )
