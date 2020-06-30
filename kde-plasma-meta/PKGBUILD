@@ -1,13 +1,12 @@
 # Maintainer: Jim Madge <jmmadge@gmail.com>
 
 pkgname=kde-plasma-meta
-pkgver=1
-pkgrel=2
+pkgver=2
+pkgrel=1
 arch=(any)
 pkgdesc='Metapackage for my plasma and kde preferences'
 depends=(plasma-meta
          latte-dock
-         konsole
          dolphin
          okular
          ark
