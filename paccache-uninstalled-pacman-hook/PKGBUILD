@@ -1,0 +1,14 @@
+# Maintainer: Jim Madge <jmmadge@gmail.com>
+pkgname=paccache-uninstalled-pacman-hook
+pkgver=1
+pkgrel=1
+pkgdesc='A pacman hook to remove uninstalled packages from the cache'
+arch=('any')
+license=('MIT')
+depends=('pacman-contrib')
+source=('paccache-uninstalled.hook')
+sha256sums=('420624c44657c4b615ef79fb517335cec0d0c91eb4c2c9e83c363dd320689aa9')
+
+package() {
+        install -Dm 0644 "$srcdir"/paccache-uninstalled.hook "$pkgdir"/usr/share/libalpm/hooks/paccache-uninstalled.hook
+}
