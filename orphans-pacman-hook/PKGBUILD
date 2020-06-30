@@ -1,0 +1,14 @@
+# Maintainer: Jim Madge <jmmadge@gmail.com>
+pkgname=orphans-pacman-hook
+pkgver=1
+pkgrel=1
+pkgdesc='A pacman hook to notify of orphaned packages'
+arch=('any')
+license=('MIT')
+depends=('pacman')
+source=('orphans.hook')
+sha256sums=('484bfb6cab0173f891a82bfa6b3666631efc16c1f80592d6fe244100c7b9baba')
+
+package() {
+        install -Dm 0644 "$srcdir"/orphans.hook "$pkgdir"/usr/share/libalpm/hooks/orphans.hook
+}
