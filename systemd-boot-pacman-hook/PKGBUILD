@@ -1,5 +1,5 @@
 # Maintainer: Jim Madge <jmmadge@gmail.com>
-pkgname=my-systemd-boot-pacman-hook
+pkgname=systemd-boot-pacman-hook
 pkgver=1
 pkgrel=1
 pkgdesc='A pacman hook to update sytemd-boot automatically'
@@ -7,9 +7,8 @@ arch=('any')
 license=('MIT')
 depends=('systemd')
 source=('systemd-boot.hook')
-md5sums=('cc948b2536e4a42caca01a7656d6babe')
+sha256sums=('118e3adbdffa8ea0d6f0f4de95ac8414ef6c20ac7d7d3903bc84aecc74762421')
 
 package() {
-        install -m0755 -d "$pkgdir"/etc/pacman.d/hooks
-        install -m0644 "$srcdir"/systemd-boot.hook "$pkgdir"/etc/pacman.d/hooks/systemd-boot.hook
+        install -Dm 0644 "$srcdir"/systemd-boot.hook "$pkgdir"/usr/share/libalpm/hooks/systemd-boot.hook
 }
