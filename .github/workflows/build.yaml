@@ -1,0 +1,29 @@
+---
+name: build
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        package:
+          - jim-base-meta
+          - kde-plasma-meta
+          - orphans-pacman-hook
+          - paccache-pacman-hook
+          - paccache-uninstalled-pacman-hook
+          - reflector-pacman-hook
+          - retroarch-meta
+          - systemd-boot-pacman-hook
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build package
+        uses: 2m/arch-pkgbuild-builder@v1.12
+        with:
+          target: 'pkgbuild'
+          pkgname: ${{ matrix.package }}
