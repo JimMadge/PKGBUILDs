@@ -1,5 +1,5 @@
 # Maintainer: Jim Madge <jmmadge@gmail.com>
-pkgname=my-reflector-pacman-hook
+pkgname=reflector-pacman-hook
 pkgver=1
 pkgrel=1
 pkgdesc='A pacman hook to update the mirrorlist when pacman-mirrorlist is upgraded'
@@ -8,9 +8,8 @@ license=('MIT')
 depends=('pacman-contrib'
          'reflector')
 source=('reflector.hook')
-md5sums=('71ae4923d5b9b36e9d79e8f62e619f09')
+sha256sums=('211c85d336810f4a7a95902b818edb90a286f2da484bc363a347e237f620a203')
 
 package() {
-        install -m0755 -d "$pkgdir"/etc/pacman.d/hooks
-        install -m0644 "$srcdir"/reflector.hook "$pkgdir"/etc/pacman.d/hooks/reflector.hook
+        install -Dm 0644 "$srcdir"/reflector.hook "$pkgdir"/usr/share/libalpm/hooks/reflector.hook
 }
