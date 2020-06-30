@@ -1,5 +1,5 @@
 # Maintainer: Jim Madge <jmmadge@gmail.com>
-pkgname=my-paccache-pacman-hook
+pkgname=paccache-pacman-hook
 pkgver=1
 pkgrel=1
 pkgdesc='A pacman hook to remove old packages from the cache'
@@ -7,9 +7,8 @@ arch=('any')
 license=('MIT')
 depends=('pacman-contrib')
 source=('paccache.hook')
-md5sums=('66d67b8a33b4e38def6a705dafe5f92d')
+sha256sums=('3a34ea14f32760fbd05b72b2ae34b944accfeb25554813e4d4231e2b2e5392d9')
 
 package() {
-        install -m0755 -d "$pkgdir"/etc/pacman.d/hooks
-        install -m0644 "$srcdir"/paccache.hook "$pkgdir"/etc/pacman.d/hooks/paccache.hook
+        install -Dm 0644 "$srcdir"/paccache.hook "$pkgdir"/usr/share/libalpm/hooks/paccache.hook
 }
