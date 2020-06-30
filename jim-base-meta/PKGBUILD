@@ -1,12 +1,13 @@
 # Maintainer: Jim Madge <jmmadge@gmail.com>
 
 pkgname=jim-base-meta
-pkgver=1
+pkgver=2
 pkgrel=1
 arch=(any)
 pkgdesc='My base packages'
-depends=(vim
+depends=(alacritty
          zsh
+         vim
          git
          fzf
          tmux
