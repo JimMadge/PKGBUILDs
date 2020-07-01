@@ -8,4 +8,4 @@ Target = *
 [Action]
 Description = Counting orphaned packages...
 When = PostTransaction
-Exec = /usr/bin/bash -c 'NORPHANS=$(pacman -Qdt | wc -l); if [ -n "$NORPHANS" ]; then printf "$NORPHANS orphaned packages.\nList orphaned packages with pacman -Qdt and remove with pacman -Rns \$(pacman -Qqdt)\n"; fi'
+Exec = /usr/bin/bash -c 'NORPHANS=$(pacman -Qdt | wc -l); if [ "$NORPHANS" -gt 0 ]; then printf "$NORPHANS orphaned packages.\nList orphaned packages with pacman -Qdt and remove with pacman -Rns \$(pacman -Qqdt)\n"; fi'
