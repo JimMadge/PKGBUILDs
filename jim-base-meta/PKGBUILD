@@ -1,7 +1,7 @@
 # Maintainer: Jim Madge <jmmadge@gmail.com>
 
 pkgname=jim-base-meta
-pkgver=2
+pkgver=3
 pkgrel=1
 arch=(any)
 pkgdesc='My base packages'
@@ -16,6 +16,7 @@ depends=(alacritty
          mpv
          youtube-dl
          firefox
+         firefox-extension-passff
          nextcloud-client
          julia
          gcc
