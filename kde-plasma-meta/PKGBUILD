@@ -11,4 +11,5 @@ depends=(plasma-meta
          okular
          ark
          gwenview
-         spectacle)
+         spectacle
+         pulseaudio-bluetooth)
