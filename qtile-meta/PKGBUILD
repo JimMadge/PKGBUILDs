@@ -1,0 +1,22 @@
+# Maintainer: Jim Madge <jmmadge@gmail.com>
+
+pkgname=qtile-meta
+pkgver=1
+pkgrel=1
+arch=(any)
+pkgdesc='My qtile packages'
+depends=(qtile
+        python-psutil
+        alacritty
+        rofi
+        i3lock-color
+        gnome-keyring
+        picom
+        redshift
+        nitrogen
+        networkmanager
+        pulseaudio
+        pulsemixer
+        alsa-utils
+        udiskie
+        xorg-xrandr)
