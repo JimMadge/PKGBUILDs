@@ -22,6 +22,5 @@ depends=(alacritty
          nextcloud-client
          python
          julia
-         gcc
          flake8
          pacman-contrib)
