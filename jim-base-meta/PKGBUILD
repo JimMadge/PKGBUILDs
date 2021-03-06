@@ -7,7 +7,7 @@ arch=(any)
 pkgdesc='My base packages'
 depends=(alacritty
          zsh
-         vim
+         gvim
          git
          exa
          fzf
