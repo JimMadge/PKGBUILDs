@@ -9,6 +9,7 @@ depends=(alacritty
          zsh
          gvim
          git
+         stow
          exa
          fzf
          tmux
